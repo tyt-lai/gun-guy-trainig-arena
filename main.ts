@@ -23,6 +23,7 @@ sprites.onOverlap(SpriteKind.Projectile, SpriteKind.Enemy, function (sprite, oth
     sprite.destroy()
     otherSprite.destroy()
     otherSprite.startEffect(effects.spray)
+    gunguy.say("YETE", 250)
     info.changeScoreBy(1)
 })
 sprites.onOverlap(SpriteKind.Player, SpriteKind.Enemy, function (sprite, otherSprite) {
